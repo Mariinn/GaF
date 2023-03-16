@@ -1,0 +1,225 @@
+		html, body{
+			height: 100%;
+		}
+		.header {
+			position: fixed;
+			left: 0;
+			top: 0;
+			height: 170px;
+			background-color: red;
+		}
+		.mainbtn{
+			height: 40px;
+		}
+		.second1btn{
+			height: 40px;
+		}
+		.second2btn{
+			height: 40px;
+		}
+		.second3btn{
+			height: 40px;
+		}
+		.header2 {
+			height: 40px;
+		}
+		.cyel{
+			background-color:#d9c7a1;
+		}
+		.cbl{
+			background-color:#4f8a9d;
+		}
+		.roundcrn{
+			border-radius: 10px;
+		}
+		.cdrbl{
+			background-color:#3b6b7a;
+		}
+		.blockmain{
+			height: 250px;
+		}
+		.body1{
+			background-image: url(e.png);
+			background-size: cover;
+			background-position: center center;
+			height: 590px;
+		}
+		.op05{
+			--bs-bg-opacity: .5;
+		}
+		.b1b{
+			height: 460px;
+		}
+		.b1s{
+			height: 50px;
+		}
+		.body2{
+			display: none;
+			height: 2480px;
+		}
+		.b2s11{
+			height:525px; 
+			width: 480px;
+			background-image: url(b2s11.png);
+			background-size: cover;
+			background-position: center center;
+		}
+		.b2s22{
+			height:525px; 
+			width: 480px;
+			background-image: url(b2s22.png);
+			background-size: cover;
+			background-position: center center;
+		}
+		.b2s13{
+			height:525px; 
+			width: 480px;
+			background-image: url(b2s13.png);
+			background-size: cover;
+			background-position: center center;
+		}
+		.b2s24{
+			height:525px; 
+			width: 480px;
+			background-image: url(b2s24.png);
+			background-size: cover;
+			background-position: center center;
+		}
+		.b2s2{
+			height:525px; 
+			width: 480px;
+			background-image: url(b2s2.png);
+			background-size: cover;
+			background-position: center center;
+		}
+		.b2b1{
+			height:525px; 
+			width: 770px;
+			background-image: url(b2b1.png);
+			background-size: cover;
+			background-position: center center;
+		}
+		.b2b2{
+			height:525px; 
+			width: 770px;
+			background-image: url(b2b2.png);
+			background-size: cover;
+			background-position: center center;
+		}
+		.b2b3{
+			height:525px; 
+			width: 770px;
+			background-image: url(b2b3.png);
+			background-size: cover;
+			background-position: center center;
+		}
+		.b2b4{
+			height:525px; 
+			width: 770px;
+			background-image: url(b2b4.png);
+			background-size: cover;
+			background-position: center center;
+		}
+		.bb1{
+			background-image: url(bggoodpit1.png);
+			background-size: cover;
+			background-position: center center;
+			height: 620px;
+		}
+		.bb2{
+			background-image: url(bggoodpit2.png);
+			background-size: cover;
+			background-position: center center;
+			height: 620px;
+		}
+		.body3{
+			display: none;
+			height: 620px;
+		}
+		.body4{
+			height: 1240px;
+			display: none;
+		}
+		.b4f{
+			background-image: url(dsf.png);
+			background-size: cover;
+			background-position: center center;
+			height: 680px;
+		}
+		.b4s{
+			background-image: url(dsf2.png);
+			background-size: cover;
+			background-position: center center;
+			height: 680px;
+		}
+		.aa{
+			background-image: url(2.png);
+			background-size: cover;
+			background-position: center center;
+			height: 680px;
+		}
+		.bl1{
+			background-image: url(bl1.png);
+			background-size: cover;
+			background-position: center center;
+
+		}
+		.b4sr{
+			background-image: url(b4sr.png);
+			background-size: contain;
+			background-position: center center;
+			height: 630px;
+			width: 450px;
+		}
+		.karta{
+			background-image: url(b4sr.png);
+			background-size: contain;
+			background-position: center center;
+			height: 630px;
+			width: 450px;
+		}
+		.karta2{
+			background-image: url(karta3.png);
+			background-size: cover;
+			background-position: center center;
+			height: 630px;
+			width: 450px;
+		}2
+		.b4sb1{
+			background-image: url(b4sb1.png);
+			background-size: cover;
+			background-position: center center;
+			height: 480px;
+		}
+		.b4sb2{
+			background-image: url(b4sb2.png);
+			background-size: cover;
+			background-position: center center;
+			height: 135px;
+		}
+		.b3b{
+			background-image: url(c1.png);
+			background-size: cover;
+			background-position: center center;
+		}
+		.bb3{
+			background-image: url(cc.png);
+			background-size: cover;
+			background-position: center center;
+			height: 620px;
+		}
+		.bb4{
+			background-image: url(e.png);
+			background-size: cover;
+			background-position: center center;
+			height: 620px;
+		}
+		.conteiner{
+			background-color: #689cae;
+			width: 1800 px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.btn-outline-lightblue{
+
+		}
