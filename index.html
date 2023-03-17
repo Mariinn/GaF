@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Рожь</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #3b6b7a;">
+<?php  
+	$connect = mysqli_connect('127.0.0.1','root','','GaF');
+
+	$textQuerry=' SELECT * FROM Dishes ';
+	$querry=mysqli_query($connect,$textQuerry);
+
+	$select_dishes = "SELECT * FROM Dishes";
+	$result_dishes= mysqli_query($connect,$select_dishes);
+
+						
+	$dish1= $result_dishes->fetch_assoc();
+	$dish2= $result_dishes->fetch_assoc();
+	$dish3= $result_dishes->fetch_assoc();
+	$dish4= $result_dishes->fetch_assoc();
+?> 
+
+	<div class="col-12 header " style="background-image: url(aa.png);background-size: cover;background-position: center center;"> <!--шапка-->
+		<div class="d-flex" style="height: 125px;">
+			
+		</div>
+
+		<div class=" header2 ">
+			<div class="  mx-auto d-flex text-light" style="">
+				<div class="  mainbtn  mx-auto " > Главная</div>
+				<div class="  second1btn  mx-auto"> Здоровое питание</div>
+				<div class="  second2btn  mx-auto"> Меню</div>
+				<div class="  second3btn  mx-auto"> Карта</div>
+			</div>
+			
+		</div>
+	</div>
+	<div style="height: 170px"></div><!--сверху убрать-->
+	<div class="px-4">
+		<div class=" conteiner col-12" ><!--Контейнер-->
+			<div class="col-12 mx-auto body1 pt-4"><!--BODY   1   главная-->
+				<div class="col-10 mx-auto">
+					<div class="col-12 mx-auto bg-light op05 b1b roundcrn d-flex" > <!--прозрачная большая-->
+						<div class="col-4 ps-5 pt-5">
+							<p class="fs-2">Здраствуйте!</p>
+							<p  class="fs-5">Вы сейчас находитесь на уникальном сайте со сбором информации по питанию учащихся ,  возможность оформить виртуальную карту для оплаты исключительно в школьной столовой.</p>
+						</div>
+						<div class="col-4 ps-5 pt-5" style="margin-left: 280px;">
+							<p class="fs-3">Сегодняшнее меню:</p>
+							<img src="bl2.jpg" class="roundcrn" style="width:300px ;height: 300px;">
+							<p class="text-end me-5">250 рублей</p>
+						</div>
+					</div>
+					<div class="col-5 mt-4 ms-auto bg-light op05 b1s text-center">
+						<p>Время работы: 8:00 - 18:00</p>
+					</div> <!--прозрачная маленькая-->
+				</div>
+				
+				<!-- <div class=" col-9 mx-auto d-flex">
+					<div class=" col-5 blockmain cyel roundcrn" >
+							
+					</div>
+					<div class=" col-5 ms-auto blockmain cyel roundcrn" >
+						
+					</div>
+				</div>
+				<div class="col-9 mx-auto  d-flex mt-5">
+					<div class="col-5  blockmain cyel roundcrn" >
+						
+								
+					</div>
+					<div class="col-5 ms-auto blockmain cyel roundcrn" >
+						
+
+					</div>
+				</div>
+				<div class=" col-9 mx-auto  d-flex mt-5">
+					<div class="col-5 blockmain cyel roundcrn">
+						
+								
+					</div>
+					<div class=" col-5 ms-auto blockmain cyel roundcrn" >
+						
+					</div>
+				</div> -->
+			</div>
+			<div class="col-12 mx-auto body2"><!--BODY 2  здоровое питание-->
+				<div class=" col-12 bb1">
+					<div class="col-11 mx-auto pt-4 d-flex">
+						<div class=" b2s11 roundcrn"></div>
+						<div class="ms-5  b2b1 roundcrn">
+							
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-12 bb2">
+					<div class="col-11 mx-auto pt-4 d-flex">
+						<div class="  b2s22 roundcrn"></div>
+						<div class="ms-5  b2b2 roundcrn">
+							
+
+						</div>
+					</div>
+				</div>
+				<div class=" col-12 bb1">
+					<div class="col-11 mx-auto pt-4 d-flex">
+						<div class=" b2s13 roundcrn"></div>
+						<div class="ms-5  b2b3 roundcrn"></div>
+					</div>
+				</div>
+				<div class="col-12 bb2">
+					<div class="col-11 mx-auto pt-4 d-flex">
+						<div class=" b2s24 roundcrn"></div>
+						<div class="ms-5  b2b4 roundcrn"></div>
+					</div>
+				</div>
+			</div>
+				
+			<div class="col-12 mx-auto body3"><!--BODY 3 меню-->
+				<div class="col-12 bb3 pt-4">
+					<div class="col-11  mx-auto" style="height: 550px ">
+						<div class="col-12  d-flex mt-3" style="height:280px"><!--две крас-->
+							<div class=" b3b roundcrn d-flex" style="width: 630px;">	
+								<img src="<?php echo $dish1['img'];?> " style="height:280px;width: 280px;">
+								<div class="col-6">
+									<p><?php echo $dish1['name'];?></p>
+									<p><?php echo $dish1['cost'];?> рублей</p>
+									<p><?php echo $dish1['description'];?></p>									
+								</div>
+								
+							</div>
+							<div class=" b3b roundcrn ms-auto d-flex" style="width: 630px;">
+								<img src="<?php echo $dish3['img'];?> " style="height:280px;width: 280px;">
+								<div class="col-6">
+									<p><?php echo $dish3['name'];?></p>
+									<p><?php echo $dish3['cost'];?> рублей</p>
+									<p><?php echo $dish2['description'];?></p>									
+								</div>
+								
+							</div>
+						</div>
+
+						<div class="col-12  mt-4 d-flex " style="height:280px"><!--две крас-->
+							<div class=" b3b roundcrn d-flex" style="width: 630px;">	
+								<img src="<?php echo $dish2['img'];?> " style="height:280px;width: 280px;">
+								<div class="col-6">
+									<p><?php echo $dish2['name'];?></p>
+									<p><?php echo $dish2['cost'];?> рублей</p>
+									<p><?php echo $dish2['description'];?></p>									
+								</div>
+								
+							</div>
+							<div class=" b3b roundcrn ms-auto d-flex" style="width: 630px;">
+								<img src="<?php echo $dish4['img'];?> " style="height:280px;width: 280px;">
+								<div class="col-6">
+									<p><?php echo $dish4['name'];?></p>
+									<p><?php echo $dish4['cost'];?> рублей</p>
+									<p><?php echo $dish4['description'];?></p>									
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 mx-auto body4"><!--BODY 4 карта-->
+				<div class="col-12 b4f d-flex">
+					<div class=" cdrbl"style="height: 680px; width: 540px; padding: 25 px; padding-top: 25px; padding-left: 35px;">
+						<div class="karta roundcrn"></div>
+					</div>
+					<div class=" "style="heigth:680 px; width: 930px; padding: 25 px; padding-top: 25px; padding-left: 35px; padding-right: 25px;">
+						<div class="col-12 roundcrn b4sb2" style="height:135px;"></div>
+						<div class="col-12 roundcrn karta2 mt-3" style="height:480px;"></div>
+					</div>
+				</div>
+				<div class="col-12 aa d-flex"><!--страница вс картами-->
+					
+				</div>
+			</div>
+		</div>
+	</div>
+					
+		
+	
+<script type="text/javascript">
+	let mainbtn = document.querySelector('.mainbtn')
+	let second1btn = document.querySelector('.second1btn')
+	let second2btn = document.querySelector('.second2btn')
+	let second3btn = document.querySelector('.second3btn')
+	let body1 = document.querySelector('.body1')
+	let body2 = document.querySelector('.body2')
+	let body3 = document.querySelector('.body3')
+	let body4 = document.querySelector('.body4')
+	mainbtn.onclick = function(){
+		body2.style.display = 'none';
+		body3.style.display = 'none';
+		body4.style.display = 'none';
+		body1.style.display = 'block';
+	}
+	second1btn.onclick = function(){
+		body1.style.display = 'none';
+		body3.style.display = 'none';
+		body4.style.display = 'none';
+		body2.style.display = 'block';
+	}
+	second2btn.onclick = function(){
+		body1.style.display = 'none';
+		body2.style.display = 'none';
+		body4.style.display = 'none';
+		body3.style.display = 'block';
+	}
+	second3btn.onclick = function(){
+		body1.style.display = 'none';
+		body2.style.display = 'none';
+		body3.style.display = 'none';
+		body4.style.display = 'block'
+	}
+</script>
+<!-- <script src="script.js"></script>	 -->
+</body>
+</body>
+</html>
